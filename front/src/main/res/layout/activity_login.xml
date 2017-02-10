@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="181dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="#ff3995ff"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/logo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="31dp"
+        android:layout_row="3"
+        android:layout_column="0"></TableRow>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_row="4"
+        android:layout_column="0">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Phone"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_marginLeft="18dp"
+                android:textColor="#ff3995ff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:id="@+id/editText_logPhone"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_round_blue" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:id="@+id/textView2"
+                android:layout_column="0"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff3995ff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText_logPassword"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/text_round_blue"
+                android:layout_marginTop="5dp" />
+        </TableRow>
+    </TableLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="83dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:id="@+id/radiogroup_u">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:id="@+id/radioButton_user"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff3995ff"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruler"
+                android:id="@+id/radioButton_ruler"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff3995ff"
+                android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:id="@+id/button_logLogin"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:text="Register"
+        android:id="@+id/button_logRegister"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff" />
+</GridLayout>
